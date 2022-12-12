@@ -13,7 +13,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { red } from '@mui/material/colors';
 import { Navigate } from 'react-router-dom';
 
-export default function PageOne() {
+export default function PageSix() {
   
       React.useEffect(() => {
         AOS.init();

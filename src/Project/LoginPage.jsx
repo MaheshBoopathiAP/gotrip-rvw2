@@ -2,6 +2,7 @@ import { Email } from '@mui/icons-material'
 import { Link } from '@mui/material'
 import React, { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
+import './LoginStyles.css';
 
 
 function Login() {
@@ -25,7 +26,7 @@ function Login() {
     }
     
   return (
-    <div>
+    <div className='loginback'>
         <center>
         <div className='container'>
 

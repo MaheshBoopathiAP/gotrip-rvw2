@@ -1,23 +1,66 @@
-.page-one{
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.page-one.scroll{
   
- 
+    position:fixed ;
+    
+
+}
+.home-button{
+margin-right: 30px;
+
+}
+.aboutus-button{
+  margin-right: 30px;
+}
+
+.support-button{
+  margin-right: 30px;
+}
+.logout{
+  margin-right: 30px;
+}
+.logo-size{
+  margin-left: 100px;
+  width: 35px;
+  height: auto;
+}
+.gotrip-index{
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+.full{
+  justify-content:  center;
 }
 .address{
-  width: 800px;
-  color: black;
+  width: 700px;
+  font-size:20px;
+  color: #000000;
+  font-family: 'Roboto Mono', monospace;
+
+
 }
 .place-name{
   color: black;
+  font-weight:bold;
   margin: 0px;
-  margin-top: 70px;
+  font-size:20px;
   margin-left: 50px;
-  margin-bottom: 20px;
+  font-family:times;
+
 }
 .place-pic{
-  width: 350px;
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom:30px;
+  
+
 }
 .contact{
-  color: black;
+  color: #000000;
+  font-family: 'Roboto Mono', monospace;
+  font-size:20px;
 }
 .container1{
     margin-top: 10px;
@@ -25,9 +68,46 @@
   .contain-box{
     display: flex;
     gap: 80px;
-    padding-left: 100px;
-    background-color: #1b668269;
+    margin-left: 180px;
+    
+    
   }
-body{
- background-color: #093545;
+  .bg-pic{
+    width: 1550px;
+    
+  }
+  .body-div{
+      width: 1300px;
+      height: 450px;
+      border: 1px solid black;
+      margin-right: 0px;
+  }
+  .bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    border: none;
+    margin: 0px;
+    
+  }
+.place-list{
+ 
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-color: antiquewhite;
+}
+.title{
+  font-family: 'Caveat Brush', cursive;
+  font-size: 50px;
+  padding: 300px 40px;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+.scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
