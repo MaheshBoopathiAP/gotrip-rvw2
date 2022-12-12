@@ -1,0 +1,33 @@
+.page-one{
+  
+ 
+}
+.address{
+  width: 800px;
+  color: black;
+}
+.place-name{
+  color: black;
+  margin: 0px;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.place-pic{
+  width: 350px;
+}
+.contact{
+  color: black;
+}
+.container1{
+    margin-top: 10px;
+  }
+  .contain-box{
+    display: flex;
+    gap: 80px;
+    padding-left: 100px;
+    background-color: #1b668269;
+  }
+body{
+ background-color: #093545;
+}
