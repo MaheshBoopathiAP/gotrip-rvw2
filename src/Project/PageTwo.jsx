@@ -82,7 +82,7 @@ export default function PageTwo() {
               <div>
                 
                   <p className='place-name'>
-                      NAME
+                      KG Cinemas
                   </p>
               </div>
                 <div className='contain-box'>
@@ -109,7 +109,7 @@ export default function PageTwo() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                      PVR Cinemas
                   </p>
               </div>
                 <div className='contain-box'>
@@ -131,7 +131,7 @@ export default function PageTwo() {
           <div data-aos="fade-up-left" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                      Miraj Cinemas
                   </p>
               </div>
                 <div className='contain-box'>
@@ -153,7 +153,52 @@ export default function PageTwo() {
           <div data-aos="fade-up-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                      Karpagam Cinemas
+                  </p>
+              </div>
+                <div className='contain-box'>
+                  <div>
+                    <img className='place-pic' src="images/inox.png"/>
+                  </div>
+                  <div>
+                      <p className='address'>
+                      ADDRESS :
+                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      </p>
+                      <p className='contact'>
+                      CONTACT : 123456789
+                      </p>
+                  </div>
+            </div>
+          
+          </div>
+          <div data-aos="fade-up-right" className='page-one'>
+              <div>
+                  <p className='place-name'>
+                      INOX Cinemas
+                  </p>
+              </div>
+                <div className='contain-box'>
+                  <div>
+                    <img className='place-pic' src="images/inox.png"/>
+                  </div>
+                  <div>
+                      <p className='address'>
+                      ADDRESS :
+                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      </p>
+                      <p className='contact'>
+                      CONTACT : 123456789
+                      </p>
+                  </div>
+            </div>
+          
+          </div>
+          <hr/>
+          <div data-aos="fade-up-right" className='page-one'>
+              <div>
+                  <p className='place-name'>
+                      Cinepolis Cinemas
                   </p>
               </div>
                 <div className='contain-box'>

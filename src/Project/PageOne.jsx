@@ -82,17 +82,17 @@ export default function PageOne() {
               <div>
                 
                   <p className='place-name'>
-                      NAME
+                      Fun Mall :
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src='images/inox.png' data-aos="fade-right"/>
+                    <img className='place-pic' src='images/funmall.jpg' data-aos="fade-right"/>
                   </div>
                   <div>
                       <p className='address' data-aos="fade-left">
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      No 474, Avinashi Road, Peelamedu, Coimbatore - 641004, 
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -109,17 +109,17 @@ export default function PageOne() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                      Brookefields :
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/brooks.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      67-71, Dr Krishnasamy Mudaliyar Rd, Brookefields, Sukrawar Pettai, Ram Nagar, Coimbatore, Tamil Nadu 641001.
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -131,17 +131,17 @@ export default function PageOne() {
           <div data-aos="fade-up-left" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                      Prozone :
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/prozone.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                              SF 201, Sivanandapuram, Sathy Rd, Coimbatore, Tamil Nadu 641035 
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -150,29 +150,8 @@ export default function PageOne() {
             </div>
         </div>
         <hr/>
-          <div data-aos="fade-up-right" className='page-one'>
-              <div>
-                  <p className='place-name'>
-                      NAME
-                  </p>
-              </div>
-                <div className='contain-box'>
-                  <div>
-                    <img className='place-pic' src="images/inox.png"/>
-                  </div>
-                  <div>
-                      <p className='address'>
-                      ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
-                      </p>
-                      <p className='contact'>
-                      CONTACT : 123456789
-                      </p>
-                  </div>
-            </div>
           
-          </div>
-          <hr/>
+          
        </div>
           
     </div>

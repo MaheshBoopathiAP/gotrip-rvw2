@@ -1,9 +1,88 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import { red } from '@mui/material/colors';
 
-function HomePage() {
-  return (
-    <div>HomePage</div>
-  )
-}
+// src/components/Home/Home.js
 
-export default HomePage
+// import CSS
+import './Home.css';
+
+const Home = (props) => {
+
+  const[homee,setHomee]=React.useState(false)
+  const[aboutuss,setAboutuss]=React.useState(false)
+  const[supportt,setSupportt]=React.useState(false)
+  const[logoutt,setLogoutt]=React.useState(false)
+  if(homee)
+  {
+    return <Navigate to="/home"/>
+  }
+  if(aboutuss)
+  {
+    return <Navigate to="/aboutus"/>
+  }
+  if(supportt)
+  {
+    return <Navigate to="/support"/>
+  }
+  if(logoutt)
+  {
+    return <Navigate to="/"/>
+  }
+
+    return (
+      <>
+      <div className='page-one'>
+      <Box sx={{ flexGrow: 1, color:red}}>
+    <AppBar style={{backgroundColor:'brown'}}position="static">
+      <Toolbar>
+        <IconButton
+          size="large"
+          edge="start"
+          color="static"
+          aria-label="menu"
+          sx={{ mr: 4 }}
+        >
+          <img src='imageOne.png' className='logo-size'></img>
+        </IconButton>
+        <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+          <p className='gotrip-index'>goTrip!</p>
+        </Typography>
+        <div  className='home-button'>
+        <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
+        </div>
+        <div  className='aboutus-button'>
+        <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
+
+        </div>
+        <div  className='support-button'>
+        <Button color="inherit" onClick={()=>{setSupportt(true)}}>Support</Button>
+
+        </div>
+        <div className='logout'>
+          <Button color="inherit" onClick={()=>{setLogoutt(true)}}>Logout</Button>
+        </div>
+        
+      </Toolbar>
+    </AppBar>
+  </Box>
+</div>
+        <div>
+            <div className="banner-container">
+                <div className="text-center">
+                    <h1 className="home-title-1">Welcome to GoTrip !</h1>
+                    <h4 className="home-title-2">Your very own personal Guide for Coimbatore</h4>
+                </div>
+            </div>
+        </div>
+        </>
+    );
+};
+
+export default Home;
