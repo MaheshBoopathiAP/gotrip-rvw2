@@ -19,12 +19,17 @@ export default function PageThree() {
         AOS.init();
       }, [])
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
+  }
+   if(places)
+  {
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -59,6 +64,9 @@ export default function PageThree() {
               <div  className='home-button'>
               <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
               </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
 
@@ -82,17 +90,17 @@ export default function PageThree() {
               <div>
                 
                   <p className='place-name'>
-                      NAME
+                  Kovai Kondattam Amusement Park
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src='images/inox.png' data-aos="fade-right"/>
+                    <img className='place-pic' src='images/Kovai-Kondattam.jpg' data-aos="fade-right"/>
                   </div>
                   <div>
                       <p className='address' data-aos="fade-left">
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                          2/347, Siruvani Main Rd, Durga nagar, Kalampalayam, Coimbatore, Tamil Nadu 641010
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -109,17 +117,17 @@ export default function PageThree() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Black Thunder - Water Theme Park
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/black-thunder.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Nagapattinam - Coimbatore - Gundlupet Hwy, Mettupalayam, Tamil Nadu 641305
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -128,56 +136,10 @@ export default function PageThree() {
             </div>
         </div>
         <hr/>
-          <div data-aos="fade-up-left" className='page-one'>
-              <div>
-                  <p className='place-name'>
-                      NAME
-                  </p>
-              </div>
-                <div className='contain-box'>
-                  <div>
-                    <img className='place-pic' src="images/inox.png"/>
-                  </div>
-                  <div>
-                      <p className='address'>
-                      ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
-                      </p>
-                      <p className='contact'>
-                      CONTACT : 123456789
-                      </p>
-                  </div>
-            </div>
-        </div>
-        <hr/>
-          <div data-aos="fade-up-right" className='page-one'>
-              <div>
-                  <p className='place-name'>
-                      NAME
-                  </p>
-              </div>
-                <div className='contain-box'>
-                  <div>
-                    <img className='place-pic' src="images/inox.png"/>
-                  </div>
-                  <div>
-                      <p className='address'>
-                      ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
-                      </p>
-                      <p className='contact'>
-                      CONTACT : 123456789
-                      </p>
-                  </div>
-            </div>
           
-          </div>
-          <hr/>
        </div>
           
     </div>
-    
-  
     
   );
 }

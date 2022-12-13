@@ -19,12 +19,17 @@ export default function PageFive() {
         AOS.init();
       }, [])
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
+  }
+  if(places)
+  {
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -59,6 +64,9 @@ export default function PageFive() {
               <div  className='home-button'>
               <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
               </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
 
@@ -82,17 +90,17 @@ export default function PageFive() {
               <div>
                 
                   <p className='place-name'>
-                      NAME
+                  Coimbatore Junction
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src='images/inox.png' data-aos="fade-right"/>
+                    <img className='place-pic' src='images/centralrailway station 1.png' data-aos="fade-right"/>
                   </div>
                   <div>
                       <p className='address' data-aos="fade-left">
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Gopalapuram, Coimbatore, Tamil Nadu 641001
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -109,17 +117,17 @@ export default function PageFive() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Coimbatore North
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/covainorthrail 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Sivananda Colony, Tatabad, Coimbatore, Tamil Nadu 641001
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -131,17 +139,17 @@ export default function PageFive() {
           <div data-aos="fade-up-left" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Irugur Junction
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/irugur rail 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Irugur, Tamil Nadu 641103
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -153,17 +161,63 @@ export default function PageFive() {
           <div data-aos="fade-up-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Singanallur railway station
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/singanallurbustand 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Singanallur, SIHS Colony Rd, SIHS Colony, Neelikonampalayam, Tamil Nadu 641033
+                      </p>
+                      <p className='contact'>
+                      CONTACT : 123456789
+                      </p>
+                  </div>
+            </div>
+          
+          </div>
+          <hr/>
+          <div data-aos="fade-up-right" className='page-one'>
+              <div>
+                  <p className='place-name'>
+                  Peelamedu Railway Station
+                  </p>
+              </div>
+                <div className='contain-box'>
+                  <div>
+                    <img className='place-pic' src="images/pelamed rail 1.png"/>
+                  </div>
+                  <div>
+                      <p className='address'>
+                      ADDRESS :
+                      railway station, Peelamedu, Coimbatore, Tamil Nadu 641004
+                      </p>
+                      <p className='contact'>
+                      CONTACT : 123456789
+                      </p>
+                  </div>
+            </div>
+          
+          </div>
+          <hr/>
+          <div data-aos="fade-up-right" className='page-one'>
+              <div>
+                  <p className='place-name'>
+                  Madukarai
+                  </p>
+              </div>
+                <div className='contain-box'>
+                  <div>
+                    <img className='place-pic' src="images/madurail 1.png"/>
+                  </div>
+                  <div>
+                      <p className='address'>
+                      ADDRESS :
+                      Marappalam, Madukkarai, Tamil Nadu 641105
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789

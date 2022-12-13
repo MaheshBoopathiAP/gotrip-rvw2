@@ -13,15 +13,17 @@ import { red } from '@mui/material/colors';
 // import CSS
 import './Home.css';
 
-const Home = (props) => {
+function Home() {
 
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
-  if(homee)
+  
+  if(places)
   {
-    return <Navigate to="/home"/>
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -57,6 +59,9 @@ const Home = (props) => {
         <div  className='home-button'>
         <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
         </div>
+        <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
         <div  className='aboutus-button'>
         <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
 
@@ -81,6 +86,7 @@ const Home = (props) => {
                 </div>
             </div>
         </div>
+       
         </>
     );
 };

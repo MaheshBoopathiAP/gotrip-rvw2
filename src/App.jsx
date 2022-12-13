@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 
 import HomePage from './Project/HomePage';
 import PageOne from './Project/PageOne'
+import Places from './Project/Places';
 import './App.css'
 import Support from './Project/Support';
 import AboutUs from './Project/AboutUs';
@@ -23,15 +24,16 @@ function App() {
     <div ><BrowserRouter>
     <Routes>
       <Route path="/" element={<LoginPage/>}/>
-      <Route path="/Home" element={<HomePage/>}/>
+      <Route path="/home" element={<HomePage/>}/>
+      <Route path="/Places" element={<Places/>}/>
       <Route path="/aboutus" element={<AboutUs/>}/>
       <Route path="/support" element={<Support/>}/>
-      <Route path="/PageOne" element={<PageOne/>}/>
-      <Route path="/PageTwo" element={<PageTwo/>}/>
-      <Route path="/PageThree" element={<PageThree/>}/>
-      <Route path="/PageFour" element={<PageFour/>}/>
-      <Route path="/PageFive" element={<PageFive/>}/>
-      <Route path="/PageSix" element={<PageSix/>}/>
+      <Route path="/malls" element={<PageOne/>}/>
+      <Route path="/theatre" element={<PageTwo/>}/>
+      <Route path="/theme" element={<PageThree/>}/>
+      <Route path="/bus" element={<PageFour/>}/>
+      <Route path="/rail" element={<PageFive/>}/>
+      <Route path="/air" element={<PageSix/>}/>
       </Routes>
       </BrowserRouter></div>
   )

@@ -19,12 +19,17 @@ export default function PageOne() {
         AOS.init();
       }, [])
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
+  }
+  if(places)
+  {
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -58,6 +63,9 @@ export default function PageOne() {
               </Typography>
               <div  className='home-button'>
               <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
+              </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
               </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>

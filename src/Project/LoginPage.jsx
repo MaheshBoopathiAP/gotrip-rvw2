@@ -21,7 +21,7 @@ function Login() {
             setError(true)
         }
         if((email=== "admin@gmail.com"&& password==="admin" )||( email==="gotrip@gmail.com" && password==="gotrip" )||(email==="trip1@gmail.com" && password==="trip")||(email=== "travel@gmail.com"&& password==="travel")||( email==="skct@gmail.com"&&password==="skct")){  
-            navigate('/pageone')
+            navigate('/home')
         }
     }
     

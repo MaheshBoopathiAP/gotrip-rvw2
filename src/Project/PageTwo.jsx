@@ -19,12 +19,17 @@ export default function PageTwo() {
         AOS.init();
       }, [])
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
+  }
+  if(places)
+  {
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -59,6 +64,9 @@ export default function PageTwo() {
               <div  className='home-button'>
               <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
               </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
 
@@ -82,7 +90,7 @@ export default function PageTwo() {
               <div>
                 
                   <p className='place-name'>
-                      KG Cinemas
+                    INOX Prozone Mall
                   </p>
               </div>
                 <div className='contain-box'>
@@ -109,17 +117,17 @@ export default function PageTwo() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      PVR Cinemas
+                  KG Cinemas
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/kg-cinemas.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                        3, Race Course Rd, Race Course, Gopalapuram, Coimbatore, Tamil Nadu 641018
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -131,17 +139,17 @@ export default function PageTwo() {
           <div data-aos="fade-up-left" className='page-one'>
               <div>
                   <p className='place-name'>
-                      Miraj Cinemas
+                   SPI Cinemas
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/SPI.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                          4th Floor Brookefields Mall, Tamil Nadu 641009
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -153,39 +161,17 @@ export default function PageTwo() {
           <div data-aos="fade-up-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      Karpagam Cinemas
+                    Karpagam Theatres Private Limited
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/Karpagam.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
-                      </p>
-                      <p className='contact'>
-                      CONTACT : 123456789
-                      </p>
-                  </div>
-            </div>
-          
-          </div>
-          <div data-aos="fade-up-right" className='page-one'>
-              <div>
-                  <p className='place-name'>
-                      INOX Cinemas
-                  </p>
-              </div>
-                <div className='contain-box'>
-                  <div>
-                    <img className='place-pic' src="images/inox.png"/>
-                  </div>
-                  <div>
-                      <p className='address'>
-                      ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                          167, Dr Rajendra Prasad Rd, Gandhipuram, Tamil Nadu 641012
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -198,17 +184,40 @@ export default function PageTwo() {
           <div data-aos="fade-up-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      Cinepolis Cinemas
+                    Cinepolis (Fun Cinemas)
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/cinepolis.jpg"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      4th Floor Fun Republic Mall, Avinashi Rd, Peelamedu, Tamil Nadu 641004
+                      </p>
+                      <p className='contact'>
+                      CONTACT : 123456789
+                      </p>
+                  </div>
+            </div>
+          
+          </div>
+          <hr/>
+          <div data-aos="fade-up-right" className='page-one'>
+              <div>
+                  <p className='place-name'>
+                  SRK Miraj cinemas
+                  </p>
+              </div>
+                <div className='contain-box'>
+                  <div>
+                    <img className='place-pic' src="images/miraj.jpg"/>
+                  </div>
+                  <div>
+                      <p className='address'>
+                      ADDRESS :
+                        Sri Hari Mills, Kamachipuram, Coimbatore, Tamil Nadu 641016
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789

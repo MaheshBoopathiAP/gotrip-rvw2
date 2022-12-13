@@ -19,12 +19,17 @@ export default function PageFour() {
         AOS.init();
       }, [])
   const[homee,setHomee]=React.useState(false)
+  const[places,setPlaces]=React.useState(false)
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
+  }
+  if(places)
+  {
+    return <Navigate to="/places"/>
   }
   if(aboutuss)
   {
@@ -59,6 +64,9 @@ export default function PageFour() {
               <div  className='home-button'>
               <Button color="inherit" onClick={()=>{setHomee(true)}}>Home</Button>
               </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
 
@@ -82,17 +90,17 @@ export default function PageFour() {
               <div>
                 
                   <p className='place-name'>
-                      NAME
+                    Gandhipuram Town Bus Stand
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src='images/inox.png' data-aos="fade-right"/>
+                    <img className='place-pic' src='images/COVAI TOWN BUSSTAND 1.png' data-aos="fade-right"/>
                   </div>
                   <div>
                       <p className='address' data-aos="fade-left">
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                        11/20, Bharathiyar Rd, ATT Colony, Gopalapuram, New Siddhapudur, Tamil Nadu 641044
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -109,17 +117,17 @@ export default function PageFour() {
           <div data-aos="fade-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Gandhipuram Central Busstand
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/CENTRALBUSTAND 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                        Near senthil Kumaran theatre, Sathyamurthy Rd, Ram Nagar, Coimbatore, Tamil Nadu 641018
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -131,17 +139,17 @@ export default function PageFour() {
           <div data-aos="fade-up-left" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Ukkadam Bus Stand
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/ukkadabustand 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+                      Ukkadam, Coimbatore, Tamil Nadu 641001
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
@@ -153,17 +161,18 @@ export default function PageFour() {
           <div data-aos="fade-up-right" className='page-one'>
               <div>
                   <p className='place-name'>
-                      NAME
+                  Singanallur Bus Stand
                   </p>
               </div>
                 <div className='contain-box'>
                   <div>
-                    <img className='place-pic' src="images/inox.png"/>
+                    <img className='place-pic' src="images/singanallurbustand 1.png"/>
                   </div>
                   <div>
                       <p className='address'>
                       ADDRESS :
-                          Fun Republic Mall, 4th Floor Fun Republic Mall, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004·
+
+                        Kamarajar Rd, Singanallur, Tamil Nadu 641005
                       </p>
                       <p className='contact'>
                       CONTACT : 123456789
