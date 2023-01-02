@@ -88,9 +88,7 @@ const Home = (props) => {
                   <h1 className='home-title-2'>About this Page</h1>
                     <p className='para'>
                     On a daily basis, Travel Guides sell travel packages. They give advice on sightseeing and shopping.
-
 A typical day for a Travel Guide will also include:
-
 Set up camps, and prepare meals for tour group members.Plan tour itineraries, applying knowledge of travel routes and destination sites.Resolve any problems with itineraries, service, or accommodations.Attend to special needs of tour participants.Arrange for tour or expedition details such as accommodations, transportation, equipment, and the availability of medical personnel.
                     </p>
                 </div>
