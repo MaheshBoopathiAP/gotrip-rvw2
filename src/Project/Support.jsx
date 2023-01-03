@@ -49,10 +49,7 @@ function Support() {
   {
     return <Navigate to="/aboutus"/>
   }
-  if(supportt)
-  {
-    return <Navigate to="/support"/>
-  }
+  
   if(logoutt)
   {
     return <Navigate to="/"/>

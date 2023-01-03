@@ -34,10 +34,7 @@ export default function Places() {
   {
     return <Navigate to="/home"/>
   }
-  if(places)
-  {
-    return <Navigate to="/places"/>
-  }
+  
   if(aboutuss)
   {
     return <Navigate to="/aboutus"/>
@@ -117,34 +114,34 @@ export default function Places() {
       <div className='align-places'>
         <div className='button-flex'>
 
-        <img src='/images/mallh.jpg' className='mallh'></img>
+        <img src='/images/mallh.jpg' className='mallh' onClick={()=>setMalls(true)}></img>
         <Button style={{backgroundColor: "#093545",color:'white'}} onClick={()=>setMalls(true)}> Malls </Button>
         </div>
         <div className='button-flex'>
 
-        <img src='/images/theatre.jpg' className='mallh' ></img>
+        <img src='/images/theatre.jpg' className='mallh'   onClick={()=>setTheatre(true)} ></img>
         <Button className='but' style={{backgroundColor: "#093545",color:'white'}}  onClick={()=>setTheatre(true)}>Theatres</Button>
         </div>
         <div className='button-flex'>
 
-        <img src='/images/themeh.jpg' className='mallh'></img>
+        <img src='/images/themeh.jpg' className='mallh'  onClick={()=>setTheme(true)}></img>
        
         <Button className='but' style={{backgroundColor: "#093545",color:'white'}} onClick={()=>setTheme(true)}>Theme Parks</Button>
         </div>
         <div className='button-flex'>
 
-        <img src='/images/bush.jpg' className='mallh'></img>
+        <img src='/images/bush.jpg' className='mallh'  onClick={()=>setBus(true)}></img>
         
         <Button className='but'  style={{backgroundColor: "#093545",color:'white'}} onClick={()=>setBus(true)}>Bus Stands</Button>
         </div>
         <div className='button-flex'>
 
-        <img src='/images/railh.jpg' className='mallh'></img>
+        <img src='/images/railh.jpg' className='mallh'  onClick={()=>setRail(true)}></img>
         <Button className='but' style={{backgroundColor: "#093545",color:'white'}} onClick={()=>setRail(true)}>Railway Stations</Button>
         </div>
         <div className='button-flex'>
 
-        <img src='/images/airhh.jpg' className='mallh'></img>
+        <img src='/images/airhh.jpg' className='mallh' onClick={()=>setAir(true)}></img>
         <Button className='but'  style={{backgroundColor: "#093545",color:'white'}} onClick={()=>setAir(true)}>Airports</Button>
         </div>
       </div>

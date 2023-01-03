@@ -1,38 +1,77 @@
-// src/comopnents/Footer.js
-
-import React from 'react';
-
+import React from "react";
+import {
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Heading,
+} from "./FooterStyles";
+  
 const Footer = () => {
-    return (
-
-        <div className="bg-[#FA7D19] text-white">
-            <footer className="footer p-10 justify-items-center">
-                <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Developing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </div>
-                <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </div>
-                <div>
-                    <span className="footer-title">Legal</span>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </div>
-            </footer>
-            <div className="text-center py-8">
-                <p>Copyright © 2022 - All right reserved by Codebun</p>
-            </div>
-        </div>
-    );
+  return (
+    <Box>
+      <h1 style={{ color: "green", 
+                   textAlign: "center", 
+                   marginTop: "-50px" }}>
+        GeeksforGeeks: A Computer Science Portal for Geeks
+      </h1>
+      <Container>
+        <Row>
+          <Column>
+            <Heading>About Us</Heading>
+            <FooterLink href="#">Aim</FooterLink>
+            <FooterLink href="#">Vision</FooterLink>
+            <FooterLink href="#">Testimonials</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Services</Heading>
+            <FooterLink href="#">Writing</FooterLink>
+            <FooterLink href="#">Internships</FooterLink>
+            <FooterLink href="#">Coding</FooterLink>
+            <FooterLink href="#">Teaching</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Contact Us</Heading>
+            <FooterLink href="#">Uttar Pradesh</FooterLink>
+            <FooterLink href="#">Ahemdabad</FooterLink>
+            <FooterLink href="#">Indore</FooterLink>
+            <FooterLink href="#">Mumbai</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Social Media</Heading>
+            <FooterLink href="#">
+              <i className="fab fa-facebook-f">
+                <span style={{ marginLeft: "10px" }}>
+                  Facebook
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-instagram">
+                <span style={{ marginLeft: "10px" }}>
+                  Instagram
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-twitter">
+                <span style={{ marginLeft: "10px" }}>
+                  Twitter
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-youtube">
+                <span style={{ marginLeft: "10px" }}>
+                  Youtube
+                </span>
+              </i>
+            </FooterLink>
+          </Column>
+        </Row>
+      </Container>
+    </Box>
+  );
 };
-
 export default Footer;

@@ -29,10 +29,7 @@ const Home = (props) => {
   {
     return <Navigate to="/places"/>
   }
-  if(aboutuss)
-  {
-    return <Navigate to="/aboutus"/>
-  }
+  
   if(supportt)
   {
     return <Navigate to="/support"/>
