@@ -4,13 +4,13 @@
     background-image: url('D:\WEB DEVELOPMENT CLG\React Project1\public\images\Tourism3.jpg');
    
 
-    min-height: 60vh;
-    height: 90vh;
+    min-height: 40vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     background-blend-mode: overlay;
     align-items: center;
-    opacity: bl;
+    
 }
 .home-title-1{
     font-style: italic;

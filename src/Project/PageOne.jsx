@@ -23,6 +23,7 @@ export default function PageOne() {
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
+  const[payment,setPayment]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
@@ -43,11 +44,15 @@ export default function PageOne() {
   {
     return <Navigate to="/"/>
   }
+  if(payment)
+  {
+    return <Navigate to="/payment"/>
+  }
   return (
     <div className='full'>
       <div className='page-one'>
-            <Box sx={{ flexGrow: 1, color:red}}>
-          <AppBar style={{backgroundColor:'brown'}}position="static">
+            <Box className='navv' sx={{ flexGrow: 1, color:red}}>
+          <AppBar style={{backgroundColor:'black',height: '50px',display: 'flex',justifyContent: 'center',fontFamily: 'Roboto Slab, serif'}} >
             <Toolbar>
               <IconButton
                 size="large"
@@ -56,7 +61,7 @@ export default function PageOne() {
                 aria-label="menu"
                 sx={{ mr: 4 }}
               >
-                <img src='imageOne.png' className='logo-size'></img>
+                <img src='imageOne.png' className='logo-size' alternative="img"></img>
               </IconButton>
               <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
                 <p className='gotrip-index'>goTrip!</p>
@@ -66,6 +71,9 @@ export default function PageOne() {
               </div>
               <div  className='places-button'>
               <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPayment(true)}}>Payment</Button>
               </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
@@ -82,8 +90,9 @@ export default function PageOne() {
             </Toolbar>
           </AppBar>
         </Box>
+        
       </div>
-        <hr/>
+       
            <div className='place-list'>
               <div data-aos="fade-left" className='page-one'>
             

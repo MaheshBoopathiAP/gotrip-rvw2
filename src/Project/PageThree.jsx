@@ -23,6 +23,7 @@ export default function PageThree() {
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
+  const[payment,setPayment]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
@@ -43,11 +44,15 @@ export default function PageThree() {
   {
     return <Navigate to="/"/>
   }
+  if(payment)
+  {
+    return <Navigate to="/payment"/>
+  }
   return (
     <div className='full'>
       <div className='page-one'>
             <Box sx={{ flexGrow: 1, color:red}}>
-          <AppBar style={{backgroundColor:'brown'}}position="static">
+          <AppBar style={{backgroundColor:'black',height: '50px',display: 'flex',justifyContent: 'center'}}>
             <Toolbar>
               <IconButton
                 size="large"
@@ -66,6 +71,9 @@ export default function PageThree() {
               </div>
               <div  className='places-button'>
               <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPayment(true)}}>Payment</Button>
               </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>

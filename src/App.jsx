@@ -15,6 +15,7 @@ import PageThree from './Project/PageThree';
 import PageFour from './Project/PageFour';
 import PageFive from './Project/PageFive';
 import PageSix from './Project/PageSix';
+import PayMent from './Project/PayMent';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path="/bus" element={<PageFour/>}/>
       <Route path="/rail" element={<PageFive/>}/>
       <Route path="/air" element={<PageSix/>}/>
+      <Route path="/payment" element={<PayMent/>}/>
       </Routes>
       </BrowserRouter></div>
   )

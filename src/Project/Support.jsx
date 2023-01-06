@@ -37,6 +37,7 @@ function Support() {
   const[aboutuss,setAboutuss]=React.useState(false)
   const[supportt,setSupportt]=React.useState(false)
   const[logoutt,setLogoutt]=React.useState(false)
+  const[payment,setpayment]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
@@ -54,11 +55,15 @@ function Support() {
   {
     return <Navigate to="/"/>
   }
+  if(payment)
+  {
+    return <Navigate to="/payment"/>
+  }
 
   return (
     <>
      <Box sx={{ flexGrow: 1, color:red}}>
-          <AppBar style={{backgroundColor:'brown'}}position="static">
+          <AppBar style={{backgroundColor:'black'}}>
             <Toolbar>
               <IconButton
                 size="large"
@@ -77,6 +82,9 @@ function Support() {
               </div>
               <div  className='places-button'>
               <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPlaces(true)}}>Payment</Button>
               </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>

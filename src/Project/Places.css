@@ -1,10 +1,13 @@
 .mallh{
     width: 500px;
-    height:400px
+    height:400px;
+    margin-top: 40px;
+    
     
 }
 
 .align-places{
+   
         display: flex;
         flex-wrap: wrap;    
         gap: 30px;

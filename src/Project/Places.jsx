@@ -30,6 +30,7 @@ export default function Places() {
   const[bus,setBus]=React.useState(false)
   const[rail,setRail]=React.useState(false)
   const[air,setAir]=React.useState(false)
+  const[payment,setPayment]=React.useState(false)
   if(homee)
   {
     return <Navigate to="/home"/>
@@ -71,11 +72,15 @@ export default function Places() {
   {
     return <Navigate to="/air"/>
   }
+  if(payment)
+  {
+    return <Navigate to="/payment"/>
+  }
   return (
     <div className='Places'>
       <div className='page-one'>
             <Box sx={{ flexGrow: 1, color:red}}>
-          <AppBar style={{backgroundColor:'brown'}}position="static">
+          <AppBar style={{backgroundColor:'black',height: '50px',display: 'flex',justifyContent: 'center'}}>
             <Toolbar>
               <IconButton
                 size="large"
@@ -94,6 +99,9 @@ export default function Places() {
               </div>
               <div  className='places-button'>
               <Button color="inherit" onClick={()=>{setPlaces(true)}}>Places</Button>
+              </div>
+              <div  className='places-button'>
+              <Button color="inherit" onClick={()=>{setPayment(true)}}>Payment</Button>
               </div>
               <div  className='aboutus-button'>
               <Button color="inherit" onClick={()=>{setAboutuss(true)}}>AboutUs</Button>
